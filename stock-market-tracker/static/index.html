@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Tracker</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Market Tracker</h1>
+        </header>
+        <main>
+            <div class="input-section">
+                <input type="text" id="symbol" placeholder="Enter stock symbol (e.g., AAPL)">
+                <button onclick="fetchStockData()">Get Stock Data</button>
+            </div>
+            <div id="stock-data"></div>
+            <div class="chart-section">
+                <canvas id="stockChart" width="1000" height="500" style="display: none;"></canvas>
+            </div>
+        </main>
+        <footer>
+            <p>Designed by Atharv Suryavanshi</p>
+        </footer>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
